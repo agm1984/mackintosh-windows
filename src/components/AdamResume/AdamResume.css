@@ -1,0 +1,204 @@
+#ar_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
+
+.ar_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid gray;
+  overflow: hidden; }
+
+.ar_menu-button {
+  padding: 5px;
+  font-size: 14px; }
+
+.ar_menu-button:hover {
+  color: gray;
+  text-shadow: 0px 1px 1px white;
+  cursor: not-allowed; }
+
+.ar_menu-icon {
+  padding: 3px;
+  height: 22px; }
+
+.ar_menu-icon:hover {
+  opacity: 0.3;
+  cursor: not-allowed; }
+
+#ar_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  margin: 3px;
+  padding: 5px;
+  background-color: white;
+  border-top: 2px solid #222;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #222;
+  overflow-y: scroll; }
+
+#ar_content-wrapper {
+  position: relative;
+  padding: 50px;
+  max-width: 1024px; }
+
+#topRightAccent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 50px; }
+
+#ar_content-title {
+  font-size: 20px;
+  font-weight: bold; }
+
+#ar_content_personal {
+  padding-top: 10px;
+  letter-spacing: 0.2em; }
+
+#ar_content_education {
+  padding-top: 50px;
+  letter-spacing: 0.2em; }
+
+.ar_content_education-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px; }
+
+.ar_content_education-courses {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end; }
+
+@media screen and (max-width: 1024px) {
+  .ar_content_education-group {
+    flex-direction: column;
+    align-items: center; }
+  .ar_content_education-courses {
+    align-items: center; } }
+
+.ar_content_education-schools {
+  display: flex;
+  flex: 1.3;
+  justify-content: center; }
+
+.ar_content_education-locations {
+  flex: 1;
+  font-style: italic;
+  letter-spacing: 0.2em; }
+
+#ar_content_experience {
+  padding-top: 50px;
+  letter-spacing: 0.2em; }
+
+.ar_content_experience-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 10px; }
+
+.ar_content_experience-place {
+  flex: 1;
+  letter-spacing: 0.1em; }
+
+.ar_content_experience-whenWhere {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  letter-spacing: 0.1em; }
+
+.ar_pos-city {
+  padding-bottom: 10px;
+  font-style: italic; }
+
+@media screen and (max-width: 1024px) {
+  .ar_content_experience-group {
+    flex-direction: column;
+    align-items: flex-start; }
+  .ar_content_experience-place {
+    padding-bottom: 5px; }
+  .ar_content_experience-whenWhere {
+    margin-top: 10px; }
+  .ar_pos-city {
+    padding-bottom: 0px; }
+  .ar_content_experience-details {
+    padding-top: 10px;
+    padding-bottom: 10px; } }
+
+.ar_content_experience-details {
+  flex: 2.5; }
+
+.ar_pos-jobPosition {
+  letter-spacing: 0.1em; }
+
+@media screen and (max-width: 1024px) {
+  .ar_pos-jobPosition {
+    padding-top: 10px;
+    font-weight: bold; } }
+
+.ar_pos-list {
+  margin-top: 5px;
+  list-style: none; }
+
+.ar_pos-bullet {
+  position: relative;
+  padding-top: 5px;
+  margin-left: -25px;
+  letter-spacing: 1px; }
+
+.ar_pos-bullet:after {
+  position: absolute;
+  content: '';
+  top: 12px;
+  left: -12px;
+  width: 4px;
+  height: 4px;
+  background-color: #222;
+  border-radius: 50%; }
+
+#ar_content_references {
+  padding-top: 50px;
+  letter-spacing: 0.2em; }
+
+.ar_content_references-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px; }
+
+@media screen and (max-width: 1024px) {
+  .ar_content_references-group {
+    flex-direction: column;
+    align-items: center; } }
+
+.ar_content_references-name {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.ar_content_references-position {
+  display: flex;
+  flex: 1.3;
+  justify-content: center; }
+
+.ar_content_references-contactInfo {
+  flex: 1;
+  font-style: italic; }
+
+#ar_content_references-text {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 0.1em; }

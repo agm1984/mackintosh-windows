@@ -1,0 +1,197 @@
+#Taskbar {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  bottom: 0;
+  padding: 3px;
+  width: 100%;
+  background: #c0c0c0;
+  border-top: 2px solid #efefef;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: sans-serif;
+  z-index: 999; }
+
+.start_btn {
+  display: flex;
+  flex-direction: row;
+  flex: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 29px;
+  line-height: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box; }
+
+.start_btn-active {
+  border-top: 2px solid #222;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #222;
+  box-sizing: border-box; }
+
+#start_button-icon {
+  margin-top: 2px;
+  width: 20px;
+  height: 20px; }
+
+.start-menu {
+  display: block;
+  position: absolute;
+  bottom: 38px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  font-size: 14px; }
+
+.start-menu.open {
+  display: block; }
+
+.start-menu.close {
+  display: none; }
+
+.start-menu .title-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 37px;
+  height: 100%;
+  background: linear-gradient(#000184 60%, #0f80cd); }
+
+.start-menu .title-container .title {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: white;
+  bottom: 75px;
+  left: -50px;
+  font-size: 25px;
+  font-weight: bold; }
+
+.start-menu .title-container .title span {
+  font-weight: 100; }
+
+.start-menu hr {
+  margin: 0 4px 0 40px; }
+
+.start-menu ul {
+  margin: 0;
+  padding: 0; }
+
+.start-menu ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 100px 8px 70px;
+  list-style: none;
+  white-space: nowrap; }
+
+.start-menu button {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px; }
+
+.start-menu button:hover {
+  color: white; }
+
+.start_menu-row {
+  color: black; }
+
+.start_menu-row:hover {
+  background-color: #000184;
+  color: white;
+  cursor: default; }
+
+.start_menu-row:hover button {
+  color: white; }
+
+.start_menu-rowDisabled {
+  color: #808080;
+  text-shadow: 0px 1px 1px white; }
+
+.start_menu-rowDisabled:hover {
+  background-color: #000184;
+  cursor: not-allowed; }
+
+.start_menu-icon {
+  padding-right: 20px;
+  width: 35px;
+  height: 35px; }
+
+.start_menu-iconDisabled {
+  padding-right: 20px;
+  width: 35px;
+  height: 35px;
+  opacity: 0.6; }
+
+.taskbar_progs {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  white-space: nowrap; }
+
+.taskbar_progs-mobile {
+  overflow-x: scroll; }
+
+.program {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5px;
+  height: 100%;
+  width: 200px;
+  outline: none; }
+
+.program-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px; }
+
+.program-icon > img {
+  height: 100%;
+  width: auto; }
+
+.program-open {
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box; }
+
+.program-active {
+  border-top: 2px solid #666;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #666;
+  box-sizing: border-box; }
+
+.dock-time {
+  flex: 0;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #666;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #666;
+  padding: 5px 15px 5px 35px;
+  font-size: 14px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gnome-audio-volume-high.svg/120px-Gnome-audio-volume-high.svg.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  white-space: nowrap; }

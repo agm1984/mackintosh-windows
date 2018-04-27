@@ -1,0 +1,314 @@
+#ap_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
+
+#ap_tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 30px; }
+
+.tabSelected {
+  border-bottom: none;
+  background-color: #c0c0c0;
+  outline: none;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #c0c0c0;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  z-index: 1; }
+
+.tabUnselected {
+  background-color: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  border-bottom: none; }
+
+#ap_tabs_content {
+  flex: 1;
+  padding: 10px;
+  margin-top: -2px;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0; }
+
+#ap_buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px; }
+
+.ap_buttons-normal {
+  width: 80px;
+  height: 28px;
+  margin-left: 8px;
+  background-color: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box; }
+
+#gen_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%; }
+
+#gen_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  padding-top: 40px;
+  box-sizing: border-box; }
+
+#ap_photo {
+  width: 125px;
+  height: 125px; }
+
+#gen_right {
+  width: 50%;
+  height: 100%; }
+
+.gen_right-heading {
+  padding-top: 20px; }
+
+.gen_right-text {
+  padding-left: 20px;
+  padding-top: 5px; }
+
+#ski_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px 10px 10px;
+  box-sizing: border-box; }
+
+#ski_radioboxes {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px; }
+
+#ski_radioboxes-left {
+  background: none;
+  border: none;
+  outline: #c0c0c0;
+  padding-right: 10px; }
+
+#ski_radioboxes-right {
+  background: none;
+  border: none;
+  outline: #c0c0c0; }
+
+.ski_list {
+  height: 100%;
+  background-color: white;
+  border-top: 2px solid #222;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #222;
+  overflow-y: scroll; }
+
+#ski_list-refresh {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center; }
+
+#ski_list-topRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 14px; }
+
+.ski_list-collapsedRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 5px;
+  background: none;
+  border: none;
+  outline: white; }
+
+.ski_list-icon {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+  padding-left: 3px; }
+
+.ski_list-toggleIcon {
+  width: 10px;
+  height: 10px;
+  border: 1px solid gray;
+  margin-right: 5px; }
+
+.ski_list-expandedRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  padding-top: 5px;
+  background: none;
+  border: none;
+  outline: white; }
+
+.ski_list-expandedRowTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 5px; }
+
+.ski_list_subskill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding-left: 26px; }
+
+.ski_list_subskill-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+#ski_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px; }
+
+.ski_buttons-normal {
+  width: 90px;
+  height: 28px;
+  background-color: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  outline: #c0c0c0; }
+
+#soc_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
+
+#soc_picker-container {
+  position: relative;
+  padding: 10px;
+  border: 1px solid gray; }
+
+#soc_picker-heading {
+  position: absolute;
+  padding: 0 5px 0 5px;
+  left: 5px;
+  top: -10px;
+  background-color: #c0c0c0; }
+
+#soc_picker-background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: white;
+  border-top: 2px solid #222;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #222; }
+
+.soc_link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  outline: white; }
+
+.soc_link-selected {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-color: darkblue;
+  border: 1px dotted white;
+  opacity: 0.5;
+  border-radius: 5px;
+  border: none;
+  outline: white; }
+
+.soc_link-icon {
+  width: 50px;
+  height: 50px; }
+
+.soc_link-textSelected {
+  padding-top: 5px;
+  font-size: 15px;
+  color: white;
+  z-index: 1; }
+
+.soc_link-text {
+  padding-top: 5px;
+  font-size: 15px; }
+
+#soc_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 10px;
+  width: 100%; }
+
+.soc_buttons-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 28px;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box; }
+
+.soc_buttons-buttonDisabled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 28px;
+  color: #666666;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box; }

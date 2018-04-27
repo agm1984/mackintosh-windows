@@ -1,0 +1,80 @@
+.window {
+  padding: 2px;
+  background-color: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px; }
+
+.window_topbar-active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#000184), to(#0f80cd));
+  background: linear-gradient(90deg, #000184, #0f80cd);
+  padding: 2.5px;
+  color: white;
+  font-size: 15px;
+  text-align: left; }
+
+.window_topbar-inactive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#7B7B7B), to(#B1B1B1));
+  background: linear-gradient(90deg, #7B7B7B, #B1B1B1);
+  padding: 2.5px;
+  color: #BDBDBD;
+  font-size: 15px;
+  text-align: left; }
+
+.window_topbar-title {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.window_topbar-title:hover {
+  cursor: move; }
+
+.window_topbar-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5.0px; }
+
+.window_topbar-icon > img {
+  width: auto;
+  height: 100%; }
+
+.window_topbar-buttons {
+  flex: 0;
+  display: flex;
+  flex-direction: row; }
+
+.window_topbar-buttons > button {
+  font-size: 12px;
+  color: black;
+  background: #c0c0c0;
+  width: 23px;
+  height: 20px;
+  text-align: center;
+  margin-left: 2.5px;
+  box-sizing: border-box;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  line-height: 16px;
+  font-family: helvetica; }
+
+#window_button-icon {
+  width: 10px;
+  height: 10px;
+  margin-left: -1px; }
+
+.window_content {
+  width: 100%;
+  height: calc(100% - 26px); }

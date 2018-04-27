@@ -1,0 +1,261 @@
+// ADAM HOBBIES                                                          LAYOUT
+// ############################################################################
+
+#ah_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+// TOP MENU
+.ah_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid gray;
+  overflow: hidden;
+}
+
+.ah_menu-button {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.ah_menu-button:hover {
+  color: gray;
+  text-shadow: 0px 1px 1px white;
+  cursor: not-allowed;
+}
+
+// PRIMARY MENU
+#ah_menuMain-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid gray;
+  overflow: hidden;
+}
+
+#ah_menuMain {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.ah_menu-largeButton {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-size: 13px;
+}
+.ah_menu-largeButton:hover {
+  color: gray;
+  text-shadow: 0px 1px 1px white;
+  cursor: not-allowed;
+}
+
+.ah_menu-largeButton img:hover {
+  opacity: 0.3;
+}
+
+#ah_menu-endLogo {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 999;
+}
+
+.ah_menu-logoIcon {
+  height: 45px;
+}
+
+.bonus_tooltip-off {
+  display: none;
+}
+
+.bonus_tooltip-on {
+  position: absolute;
+  padding: 5px;
+  top: 110px;
+  right: 10px;
+  white-space: nowrap;
+  background-color: lightyellow;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  z-index: 999;
+}
+
+.bonus_tooltip-on:after {
+  position: absolute;
+  content: '';
+  top: -6px;
+  right: 6px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid lightyellow;
+}
+
+// ADAM HOBBIES                                                         CONTENT
+// ############################################################################
+
+p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#ah_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  margin: 3px;
+  padding: 0px 50px 50px 50px;
+  background-image: url('./images/wallpaper.bmp');
+  border-top: 2px solid #222;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #222;
+  overflow-y: scroll;
+}
+
+#ah_content hr {
+  margin-top: 40px;
+}
+
+#ah_banner {
+  padding-top: 50px;
+  width: 100%;
+  max-width: 850px;
+}
+
+// BIO
+.cleared {
+  clear: both;
+}
+
+.ah_section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 850px;
+}
+
+.ah_section-heading {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: darkgoldenrod;
+  text-shadow: 2px 2px #222;
+}
+
+.ah_torch {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  padding-top: 10px;
+  margin-left: -50px;
+}
+
+.ah_section-wrapper {
+  color: #00FF00;
+  text-shadow: 1px 1px black;
+}
+
+.ah_section-photoRight {
+  float: right;
+  padding: 20px;
+  padding-right: 0;
+}
+
+.ah_adamPhoto {
+  width: auto;
+  height: 200px;
+  border-top: 2px solid #222;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #222;
+}
+
+// EARLY YEARS
+.ah_section-photoLeft {
+  float: left;
+  padding: 20px 20px 0px 0px;
+}
+
+// CONTACT INFO
+#contactInfo-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+#contactInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: 100px;
+  margin-top: 70px;
+  font-size: 17px;
+  white-space: nowrap;
+  background-color: rgba(75, 75, 75, 0.4);
+}
+
+.ah_torch-contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  padding-top: 5px;
+  margin-left: -105px;
+}
+
+.contactInfo-heading {
+  padding: 5px;
+  color: darkgoldenrod;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px #222;
+}
+
+.contactInfo-row {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  width: 300px;
+}
+
+.contactInfo-label {
+  flex: 1;
+  padding-right: 10px;
+  text-align: right;
+  color: white;
+}
+
+.contactInfo-value {
+  flex: 3;
+}
+
+@media screen and (max-width: 1024px) {
+  #contactInfo {
+    margin-left: -50px;
+    margin-top: 20px;
+  }
+}
+
+#counter {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  opacity: 0.6;
+}

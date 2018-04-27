@@ -1,0 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+#Windows-wrapper {
+  background-color: teal;
+  min-height: 100vh;
+  width: 100%; }
+
+.Windows_activePage {
+  background-color: teal;
+  height: calc(100vh - 2.9rem); }
