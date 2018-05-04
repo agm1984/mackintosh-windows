@@ -168,8 +168,8 @@ class AdamResume extends Component {
                   Self-employed
                 </div>
                 <div className="ar_content_experience-whenWhere">
-                  <div className="ar_pos-city">12/2016 - 01/2018</div>
-                  <div className="ar_pos-city">Ladysmith, BC</div>
+                  <div className="ar_pos-city">12/2016 - present</div>
+                  <div className="ar_pos-city">Nanaimo, BC</div>
                 </div>
                 <div className="ar_content_experience-details">
                   <div className="ar_pos-jobPosition">Software Developer</div>
